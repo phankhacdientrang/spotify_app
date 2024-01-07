@@ -1,30 +1,56 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_project/screen/aritist_detail_screen.dart';
-import 'package:spotify_project/screen/aritist_screen.dart';
-import 'package:spotify_project/screen/home_screen.dart';
-import 'package:spotify_project/screen/option_screen.dart';
-import 'package:spotify_project/screen/play_audio_screen.dart';
 import 'package:spotify_project/theme/custom_theme.dart';
 
-Future<void> main() async {
-  runApp(
-    const MyApp(),
-  );
+import 'screen/Getstarted/started.dart';
+
+void main() {
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Loading',
       theme: ThemeDataClass.darkTheme,
-      darkTheme: ThemeDataClass.darkTheme,
       debugShowCheckedModeBanner: false,
-      home: const Scaffold(
-        backgroundColor: Color.fromARGB(255, 28, 27, 27),
-        body: OptionScreen(),
+      home: LoadingPage(),
+    );
+  }
+}
+
+class LoadingPage extends StatefulWidget {
+  const LoadingPage({Key? key}) : super(key: key);
+
+  @override
+  State<LoadingPage> createState() => _LoadingPageState();
+}
+
+class _LoadingPageState extends State<LoadingPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Center(
+        child: InkWell(
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const StartedPage()));
+          },
+          child: Container(
+            height: 300,
+            width: 300,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(
+                  'assets/spotify.png',
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
