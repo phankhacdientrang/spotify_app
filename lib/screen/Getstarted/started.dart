@@ -31,7 +31,7 @@ class _StartedPageState extends State<StartedPage> {
       decoration: const BoxDecoration(
         color: Color(0xb2000000),
         image: DecorationImage(
-            image: AssetImage('assets/anh1.png'), fit: BoxFit.cover),
+            image: AssetImage('assets/images/anh1.png'), fit: BoxFit.cover),
       ),
       child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
         Container(
@@ -39,7 +39,7 @@ class _StartedPageState extends State<StartedPage> {
           width: 190,
           height: 50,
           child: Image(
-            image: AssetImage('assets/spotify.png'),
+            image: AssetImage('assets/images/spotify.png'),
             width: 190,
             height: 50,
           ),

@@ -34,7 +34,7 @@ class EnjoyPage extends StatefulWidget{
         decoration: const BoxDecoration(
           color: Color(0xb2000000),
           image: DecorationImage(
-            image: AssetImage('assets/anh1.png'),
+            image: AssetImage('assets/images/anh1.png'),
             fit: BoxFit.cover
           ),
         ),
@@ -45,7 +45,7 @@ class EnjoyPage extends StatefulWidget{
               margin: EdgeInsets.fromLTRB(3, 0, 0, 55),
               width: 235,
               height: 175,
-              child: Image(image: AssetImage('assets/spotify.png'),
+              child: Image(image: AssetImage('assets/images/spotify.png'),
                width: 235,
               height: 100,
             ),

@@ -43,7 +43,7 @@ class _SignInPageState extends State<SignInPage> {
                     width: 108,
                     height: 33,
                     child: Image(
-                      image: AssetImage('assets/spotify.png'),
+                      image: AssetImage('assets/images/spotify.png'),
                       width: 108,
                       height: 33,
                     ),
@@ -229,7 +229,7 @@ class _SignInPageState extends State<SignInPage> {
                         height: 30,
                       ),
                       Image(
-                        image: AssetImage('assets/google.png'),
+                        image: AssetImage('assets/images/google.png'),
                         width: 40,
                         height: 40,
                         fit: BoxFit.cover,
@@ -238,7 +238,7 @@ class _SignInPageState extends State<SignInPage> {
                         width: 30,
                       ),
                       Image(
-                        image: AssetImage('assets/apple.png'),
+                        image: AssetImage('assets/images/apple.png'),
                         width: 40,
                         height: 40,
                         fit: BoxFit.cover,

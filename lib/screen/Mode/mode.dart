@@ -34,7 +34,7 @@ class ModePage extends StatefulWidget{
         decoration: const BoxDecoration(
           color: Color(0xb2000000),
           image: DecorationImage(
-            image: AssetImage('assets/anh2.png'),
+            image: AssetImage('assets/images/anh2.png'),
             fit: BoxFit.cover
           ),
         ),
@@ -45,7 +45,7 @@ class ModePage extends StatefulWidget{
               margin: EdgeInsets.fromLTRB(0, 0, 5, 335),
               width: 190,
               height: 50,
-              child: Image(image: AssetImage('assets/spotify.png'),
+              child: Image(image: AssetImage('assets/images/spotify.png'),
                width: 190,
               height: 50,
              ),
@@ -95,7 +95,7 @@ class ModePage extends StatefulWidget{
                                 width: 30,
                                 height: 30,
                                 child: Image(
-                                  image: AssetImage('assets/sun.png'),
+                                  image: AssetImage('assets/images/sun.png'),
                                   width: 30,
                                   height: 30,
                                 ),
@@ -116,7 +116,7 @@ class ModePage extends StatefulWidget{
                           width: 80,
                           height: 80,
                           child: Image(
-                            image: AssetImage('assets/dark.png'),
+                            image: AssetImage('assets/images/dark.png'),
                             width: 80,
                             height: 80,
                           ),
@@ -150,7 +150,7 @@ class ModePage extends StatefulWidget{
                                       width: 30,
                                       height: 30,
                                       child: Image(
-                                        image: AssetImage('assets/sun.png'),
+                                        image: AssetImage('assets/images/sun.png'),
                                         width: 30,
                                         height: 30,
                                       ),

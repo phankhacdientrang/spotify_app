@@ -40,7 +40,7 @@ class _LoadingPageState extends State<LoadingPage> {
                 MaterialPageRoute(builder: (context) => const StartedPage()));
           },
           child: Container(
-            height: 300,
+            height: 3000,
             width: 300,
             decoration: const BoxDecoration(
               image: DecorationImage(
